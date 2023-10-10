@@ -1,0 +1,73 @@
+/* Reset para Navegador*/
+* {
+    margin: 0; /* Top Right Bottom Left */
+    padding: 0; /* Espaçamento */
+}
+
+body {
+    width: 100%; /* Comprimento*/
+    height: 100%; /* Altura */
+    display: flex; /* Não deixa as divs ou classes se sobreporem*/
+    justify-content: center; /* Alinha o texto*/
+    /*background-color: blueviolet;*/
+    background: linear-gradient(blueviolet, rgb(69, 67, 67));
+    background-repeat: no-repeat;
+}
+
+.imagem { /* Chamando a div*/
+    display: flex;
+    justify-content: center;
+}
+
+.imagem img { /* chamando a Imagem do avatar, que está dentro da div */
+    width: 170px;
+    border-radius: 200px; /* Arredonda a imagem */
+    margin-top: 10px;
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 1);
+}
+
+.nome { /* Chamando o nome, que está dentro da div */
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 32px; /* Tamanho da fonte*/
+    font-weight: 600; /* Intensidade da fonte*/
+    color: rgb(134, 220, 235);
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 4px 10px 6px rgba(0, 0, 0, 1);
+    
+}
+
+.redes-sociais {
+    margin-top: 10px; /* Margem superior*/
+    justify-content: center; /* Centralizar texto*/
+    align-items: center;
+}
+
+/* Editando as DIVs dentro da DIV redes sociais*/
+.icone, .email {
+    height: 35px;
+    width: 35px;
+    border-radius: 30px;
+    transition: all 0.3s ease-out;
+    /*box-shadow: 0 5px 5px rgba(0, 0, 0, 1);*/
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, 1);
+    margin: 10px;
+    overflow: hidden; /* oculta o texto dentro do icone */
+
+}
+
+/* editando a classe <i></i> */
+.icone i, .email i {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: rgb(248, 250, 250);
+    color: blueviolet;
+    cursor: pointer;
+
+}
