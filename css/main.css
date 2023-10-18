@@ -116,7 +116,7 @@ body {
     
 }*/
 
-.sobre-mim{
+.sobre-mim {
     position: absolute;
     top: 10px;
     /* Transform só pode ser usado com top, left... em porcentagem */
@@ -129,29 +129,44 @@ body {
 
 }
 
-.linguagem{
+.subtitulo {
+    font-weight: 600px;
+    color: rgb(2, 226, 251);
+    text-shadow: 0px 0px 8px #08fdf5;
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-text-stroke: 1px rgb(21, 184, 238);
     display: flex;
     justify-content: center;
+    font-size: 35px;
     margin-top: 30px;
-    font-size: 30px;
-    color: rgb(254, 254, 254);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 20px;
 }
 
-.projetos {
+.linguagem {
     display: flex;
+    justify-content: center;
     margin-top: 40px;
-    flex-direction: column;
-    
 }
 
-.projetos img{
+.linguagem img {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 300px;
+    border-radius: 60px;
     margin: 5px;
-    width: 270px;
-    border-radius: 100px;
-    box-shadow: 2px 5px 8px black;
-    position: relative;
+    box-shadow: 7px 9px 10px rgba(0, 0, 0, 1);
 }
+
+.projetos {
+    margin-top: 400px;
+    flex-direction: column;
+}
+
+.item {
+    
+}
+
+
+
+
