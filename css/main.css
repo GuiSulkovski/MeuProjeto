@@ -218,20 +218,21 @@ resoluções */
     .imagem img {
         width: 150px;
         border-radius: 200px;
-        margin-top: 25px;
+        margin-top: 20px;
     }
 
     .texto {
-        width: 320px;
+        width: 290px;
         height: 340px;
+        margin-left: 76px;
     }
 
     .linguagem img{
-        width: 160px;
+        width: 165px;
     }
     
     .subtitulo {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     .item {
@@ -239,7 +240,7 @@ resoluções */
     }
 
     .rodape {
-        width: 356x;
+        width: 350x;
     }
 
     .movie {
@@ -251,34 +252,34 @@ resoluções */
 /* resolução 500px */
 @media (max-width: 500px) {
     .imagem img {
-        width: 120px;
+        width: 110px;
         border-radius: 150px;
         margin-top: 20px;
     }
 
     .texto {
-        width:290px;
-        height: 380px;
+        width:230px;
+        height: 370px;
     }
 
     .linguagem img{
-        width: 150px;
+        width: 140px;
     }
     
     .subtitulo {
-        font-size: 23px;
+        font-size: 21px;
     }
 
     .item {
-        width: 300px;
+        width: 240px;
     }
 
     .rodape {
-        width: 330x;
+        width: 300x;
     }
 
     .movie {
-        width: 300px;
+        width: 240px;
     }
 } /* resolução 500px */
 
