@@ -1,0 +1,294 @@
+/* Reset para Navegador*/
+* {
+    margin: 0; /* Top Right Bottom Left */
+    padding: 0; /* Espaçamento */
+}
+
+body {
+    width: 100%; /* Comprimento*/
+    height: 100%; /* Altura */
+    display: flex; /* Não deixa as divs ou classes se sobreporem*/
+    justify-content: center; /* Alinha o texto*/
+    background: linear-gradient(blueviolet, rgb(69, 67, 67));
+    background-repeat: no-repeat;
+}
+
+.imagem { /* Chamando a div*/
+    display: flex;
+    justify-content: center;
+}
+
+.imagem img { /* chamando a Imagem do avatar, que está dentro da div */
+    width: 170px;
+    border-radius: 200px; /* Arredonda a imagem */
+    margin-top: 10px;
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 1);
+}
+
+.nome { /* Chamando o nome, que está dentro da div */
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 32px; /* Tamanho da fonte*/
+    font-weight: 100; /* Intensidade da fonte*/
+    color: rgb(2, 226, 251);
+    font-family: 'Times New Roman', Times, serif;
+    /*text-shadow: 4px 10px 6px rgba(0, 0, 0, 1);*/
+    text-shadow: 0px 0px 8px #08fdf5;
+
+    
+}
+.redes-sociais {
+    display: flex;
+    margin-top: 10px; /* Margem superior*/
+    justify-content: center; /* Centralizar texto*/
+    align-items: center;
+}
+
+.redes-sociais a {
+    text-decoration: none; /* Retirou o link do a href dos icones */
+}
+
+/* Editando as DIVs dentro da DIV redes sociais*/
+.icone, .email {
+    height: 35px;
+    width: 35px;
+    border-radius: 30px;
+    transition: all 0.3s ease-out;
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, 1);
+    margin: 10px;
+    overflow: hidden; /* oculta o texto dentro do icone */
+}
+
+/* editando a classe <i></i> */
+.icone i, .email i {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.icone span a {
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    float: right;
+    margin-right: 25px;
+    color: blueviolet;
+    line-height: 35px;
+}
+
+.icone:hover {
+    width: 135px;
+    background-color: rgb(253, 253, 253);
+}
+
+.texto {
+    display: flex;
+    position: relative; /* posição do elemento */
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    width: 600px;
+    height: 150px;
+    padding: 25px;
+    border-radius: 55px;
+    color: rgb(69, 68, 68);
+    background-color:  rgb(222, 220, 209);
+    overflow: hidden;
+    box-shadow: 7px 9px 10px rgba(0, 0, 0, 1);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* regra criada por mim */
+/*.sobre-mim {
+    position: absolute;
+    margin-bottom: 12%;
+    text-align: center;
+    color: blueviolet;
+    height: 70px;
+    padding: 50px:;
+    
+}*/
+
+.sobre-mim {
+    position: absolute;
+    top: 10px;
+    /* Transform só pode ser usado com top, left... em porcentagem */
+    display: flex;
+    color: rgb(7, 7, 7);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+
+}
+
+.subtitulo {
+    font-weight: 600px;
+    color: rgb(2, 226, 251);
+    text-shadow: 0px 0px 8px #08fdf5;
+    font-family: cursive;
+    -webkit-text-stroke: 1px rgb(66, 121, 139);
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.linguagem {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.linguagem img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    border-radius: 60px;
+    margin: 5px;
+    box-shadow: 7px 9px 10px rgba(0, 0, 0, 1);
+}
+
+.projetos {
+    margin-top: 400px;
+    flex-direction: column;
+}
+
+.item {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 35px;
+    font-size: 22px;
+    font-family: cursive;
+    color: rgb(84, 84, 84);
+    background-color: rgb(222, 220, 209);
+    border-radius: 40px;
+    border: 4px solid black;
+    width: 600px;
+    height: 45px;
+    box-shadow: 7px 9px 10px rgba(0, 0, 0, 1);
+}
+
+.item:hover {
+    transition: 0.2s;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+#movie {
+    padding: 15px;
+    margin: auto;
+    display: none;
+}
+
+#movie.active {
+    display: block;
+}
+
+.rodape {
+    /*background-color: rgb(222, 220, 209);*/
+    color: rgb(250, 247, 247);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 20px;
+    font-family: cursive;
+}
+
+/* Recurso CSS que renderiza o conteúdo do site e adapte para diverças
+resoluções */
+
+/* device pixel ratio para ver quantos ppi é a tela do dispositivo movel*/
+
+/* resolução 700px */
+@media (max-width: 700px) {
+    .imagem img {
+        width: 150px;
+        border-radius: 200px;
+        margin-top: 20px;
+    }
+
+    .texto {
+        width: 290px;
+        height: 340px;
+        margin-left: 76px;
+    }
+
+    .linguagem img{
+        width: 165px;
+    }
+    
+    .subtitulo {
+        font-size: 30px;
+    }
+
+    .item {
+        width: 350px;
+    }
+
+    .rodape {
+        width: 350x;
+    }
+
+    .movie {
+        width: 350px;
+    }
+} /* resolução 700px */
+
+
+/* resolução 500px */
+@media (max-width: 500px) {
+    .imagem img {
+        width: 110px;
+        border-radius: 150px;
+        margin-top: 20px;
+    }
+
+    .texto {
+        width:230px;
+        height: 370px;
+        margin-left: 90px;
+    }
+
+    .linguagem img{
+        width: 140px;
+    }
+    
+    .subtitulo {
+        font-size: 21px;
+    }
+
+    .item {
+        width: 240px;
+    }
+
+    .rodape {
+        width: 300x;
+    }
+
+    .movie {
+        width: 240px;
+    }
+} /* resolução 500px */
+
+
+
+
+
+
+
+
+
