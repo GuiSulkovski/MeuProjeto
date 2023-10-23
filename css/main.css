@@ -96,13 +96,13 @@ body {
     margin-top: 35px;
     width: 600px;
     height: 150px;
-    padding: 30px;
-    border-radius: 15px;
-    color:blueviolet;
-    background-color: rgb(141, 212, 218);
+    padding: 25px;
+    border-radius: 55px;
+    color: rgb(69, 68, 68);
+    background-color:  rgb(222, 220, 209);
     overflow: hidden;
     box-shadow: 7px 9px 10px rgba(0, 0, 0, 1);
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* regra criada por mim */
@@ -121,7 +121,7 @@ body {
     top: 10px;
     /* Transform só pode ser usado com top, left... em porcentagem */
     display: flex;
-    color: rgb(95, 11, 173);
+    color: rgb(7, 7, 7);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 30px;
@@ -195,6 +195,94 @@ body {
 #movie.active {
     display: block;
 }
+
+.rodape {
+    /*background-color: rgb(222, 220, 209);*/
+    color: rgb(250, 247, 247);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 20px;
+    font-family: cursive;
+}
+
+/* Recurso CSS que renderiza o conteúdo do site e adapte para diverças
+resoluções */
+
+/* device pixel ratio para ver quantos ppi é a tela do dispositivo movel*/
+
+/* resolução 700px */
+@media (max-width: 700px) {
+    .imagem img {
+        width: 150px;
+        border-radius: 200px;
+        margin-top: 25px;
+    }
+
+    .texto {
+        width: 390px;
+        height: 240px;
+    }
+
+    .linguagem img{
+        width: 160px;
+    }
+    
+    .subtitulo {
+        font-size: 24px;
+    }
+
+    .item {
+        width: 350px;
+    }
+
+    .rodape {
+        width: 356x;
+    }
+
+    .movie {
+        width: 350px;
+    }
+} /* resolução 700px */
+
+
+/* resolução 500px */
+@media (max-width: 500px) {
+    .imagem img {
+        width: 120px;
+        border-radius: 150px;
+        margin-top: 20px;
+    }
+
+    .texto {
+        width:390px;
+        height: 220px;
+    }
+
+    .linguagem img{
+        width: 150px;
+    }
+    
+    .subtitulo {
+        font-size: 23px;
+    }
+
+    .item {
+        width: 300px;
+    }
+
+    .rodape {
+        width: 330x;
+    }
+
+    .movie {
+        width: 300px;
+    }
+} /* resolução 500px */
+
+
 
 
 
