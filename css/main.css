@@ -89,6 +89,7 @@ body {
 }
 
 .texto {
+    margin: auto;
     display: flex;
     position: relative; /* posição do elemento */
     justify-content: center;
@@ -218,13 +219,12 @@ resoluções */
     .imagem img {
         width: 150px;
         border-radius: 200px;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .texto {
         width: 290px;
         height: 340px;
-        margin-left: 76px;
     }
 
     .linguagem img{
@@ -232,7 +232,7 @@ resoluções */
     }
     
     .subtitulo {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .item {
@@ -252,14 +252,19 @@ resoluções */
 /* resolução 500px */
 @media (max-width: 500px) {
     .imagem img {
-        width: 110px;
+        width: 120px;
         border-radius: 150px;
-        margin-top: 20px;
+        margin-top: 30px;
+    }
+
+    .nome{
+        font-size: 20px;
     }
 
     .texto {
-        width:230px;
-        height: 370px;
+        padding: 22px;
+        width:250px;
+        height: 400px;
     }
 
     .linguagem img{
@@ -267,7 +272,8 @@ resoluções */
     }
     
     .subtitulo {
-        font-size: 21px;
+        font-size: 18px;
+        margin-top: 35px;
     }
 
     .item {
@@ -281,6 +287,7 @@ resoluções */
     .movie {
         width: 240px;
     }
+
 } /* resolução 500px */
 
 
