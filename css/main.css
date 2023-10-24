@@ -119,7 +119,7 @@ body {
 
 .sobre-mim {
     position: absolute;
-    top: 10px;
+    top: 5px;
     /* Transform só pode ser usado com top, left... em porcentagem */
     display: flex;
     color: rgb(7, 7, 7);
