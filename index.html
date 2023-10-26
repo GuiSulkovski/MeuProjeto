@@ -12,9 +12,9 @@
     <main><!-- Main significa a estrutura principal -->
         
         
-        <div class="imagem"> <!-- Inserindo imagem -->
+        <header class="imagem"> <!-- Inserindo imagem -->
             <img src="img/avatar1.jpg" alt="Minha foto de perfil">
-        </div> <!-- Fim da DIV Inserindo imagem -->
+        </header> <!-- Fim da DIV Inserindo imagem -->
         
         <div class="nome">Guilherme Sulkovski</div><!-- Inserindo nome -->
 
@@ -72,31 +72,38 @@
         <section> <!-- Seção de videos-->
             <h2 class="subtitulo"> Conheça meus projetos Front-End </h2>
 
-            <div class="item" id="formulario"> Conteúdo 1 </div>
-            <iframe width="500" height="250" class="movieform" id="movie"
+            <div class="item" id="albumFotos"> Album de Fotos </div> <!-- Nesse exemplo a CLASS="movieFotos" sera editado no javascript -->
+            <iframe width="500" height="250" class="movieAlbum" id="movie"
             src="https://www.youtube.com/embed/-DWGfn09cXQ" 
             title="A inclusão transforma vidas | #InclusãoÉIsso - Teaser" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-            <div class="item" id="site"> Conteúdo 2 </div> <!-- Nesse exemplo a CLASS="moviesite" sera editado no javascript -->
-            <iframe width="500" height="250" class="moviesite" id="movie" 
+            <div class="item" id="casamentos"> Album de Casamento </div> <!-- Nesse exemplo a CLASS="movieCasamento" sera editado no javascript -->
+            <iframe width="500" height="250" class="movieCasamentos" id="movie" 
             src="https://www.youtube.com/embed/LrxBZJenPi0" 
             title="Futura Profissão - Técnico de Eletromecânica" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-            <div class="item" id="portfolio"> Contúdo 3 </div>
-            <iframe width="500" height="250" class="movieport" id="movie"
+            <div class="item" id="buffet"> Buffet </div>
+            <iframe width="500" height="250" class="movieBuffet" id="movie"
             src="https://www.youtube.com/embed/--Canqbimf0" 
             title="Como é estudar no SENAI? | Tem Vaga!" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <div class="item" id="mecatronica"> Projeto Mecatrônica </div>
+            <iframe width="500" height="250" class="movieMecatronica" id="movie"
+            src="https://www.youtube.com/embed/JJFiejDQ6yE" 
+            title="Mecatrônica Industrial - Curso Superior de Tecnologia | Faculdade de Tecnologia Senai-SP" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
 
         </section> <!--  Fim da Seção de videos -->
 
         <footer class="rodape"> <!-- Rodapé do site -->
             <p> Copyright &copy; 2023 Guilherme Sulkovski </p>
         </footer>
-        
+     </main><!-- encerrando a Main: estrutura principal -->
 
-    </main><!-- encerrando a Main: estrutura principal -->
+     <script src="js/script.js">  </script>
 </body>
 </html>
