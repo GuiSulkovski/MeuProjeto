@@ -1,32 +1,32 @@
 // tres constantes para referenciar as "ITEM"  divs do projeto
-const album = document.getElementById('albumFotos');
-const casamentos = document.getElementById('casamentos');
-const buffet = document.getElementById('buffet');
+const dobradeira = document.getElementById('dobradeira');
+const ihm = document.getElementById('ihm');
+const calculadora = document.getElementById('calculadora');
 const mecatronica = document.getElementById('mecatronica')
 
 // buscando as class dentro do iframe
-const movieAlbum = document.querySelector('.movieAlbum');
-const movieCasamentos = document.querySelector('.movieCasamentos');
-const movieBuffet = document.querySelector('.movieBuffet');
+const movieDobradeira = document.querySelector('.movieDobradeira');
+const movieIHM = document.querySelector('.movieIHM');
+const movieCalculadora = document.querySelector('.movieCalculadora');
 const movieMecatronica = document.querySelector('.movieMecatronica');
 
 
 // evento de click
-album.addEventListener('click', () => {
-    album.classList.toggle('active');
-    movieAlbum.classList.toggle('active');
+dobradeira.addEventListener('click', () => {
+    dobradeira.classList.toggle('active');
+    movieDobradeira.classList.toggle('active');
 });
 
 // evento de click
-casamentos.addEventListener('click', () => {
-    casamentos.classList.toggle('active');
-    movieCasamentos.classList.toggle('active');
+ihm.addEventListener('click', () => {
+    ihm.classList.toggle('active');
+    movieIHM.classList.toggle('active');
 });
 
 // evento de click
-buffet.addEventListener('click', () => {
-    buffet.classList.toggle('active');
-    movieBuffet.classList.toggle('active');
+calculadora.addEventListener('click', () => {
+    calculadora.classList.toggle('active');
+    movieCalculadora.classList.toggle('active');
 });
 
 mecatronica.addEventListener('click', () => {
